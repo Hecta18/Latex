@@ -1,0 +1,83 @@
+\documentclass[12pt, es]{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Tutorial}
+\author{Hector Sandoval \thanks{Gracias a Juan Valdes por sus explicaciones.}}
+\date{\today}
+% \date{July 2025}
+
+\begin{document}
+
+\maketitle
+% \maketitle - generacion automatica de encabezado
+
+\tableofcontents
+\addcontentsline %for automatic table of contents
+
+\begin{abstract}
+    This is a short description of a scientific writing. Serves as a teaser.
+\end{abstract}
+
+\section{Introduction}
+
+Just testing \textbf{bold}, \textit{italics}, \textsc{big letters} and \underline{underlined} formatting. 
+%paragraphs are just marked by indentation
+Double ENTER starts a new paragraph, but if I want to start a new line without making a new paragraph I just type double backlash \\ Really practical for keeping that low boilerplate.
+% just use emp, if emphasis is what you want to achieve
+Some of the greatest \emph{discoveries} in science 
+were made by accident.
+
+\textit{Some of the greatest \emph{discoveries} 
+in science were made by accident.}
+
+\textbf{Some of the greatest \emph{discoveries} 
+in science were made by accident.}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{riverside.jpg}
+    \caption{Wish I could chill in a place like that}
+    \label{fig:enter-label}
+\end{figure}
+
+% \ref & \pageref to reference
+% use to label as argument
+% environments for typesetting = \begin{} \end{}
+% figure, tabular, itemize, enumerate
+
+\begin{itemize}
+    \item example n1
+    \item example n2
+\end{itemize}
+
+\begin{enumerate}
+    \item item
+    \item item
+    \item item
+\end{enumerate}
+
+Why does everyone use the \(E = m c^2\) formula for display? I do not like it that much.
+I feel like formulas like:
+\begin{equation}% for numeration
+    F = ma    
+\end{equation}
+have had more impact in my life, than that one. Even Hook's Law \[f = -kx\] has been more influential. But to speak truth, that formula has to be in a lot of technologies of this century, so... I should not be underestimating anything.
+
+% _ for sub, ^ for upper
+% int = integral, frac = fraction, sqrt = square root
+% greek letters, write name ex.: \alpha (lower) \Alpha (upper)
+% amsmath
+
+% \section{} , \subsection{} , \subsubsection{} , etc.
+
+\begin{center}%allign
+\begin{tabular}{|c|c|}% l, left, or r, right. And | for vertical borders
+    \hline %for horizontal borders
+    cell1 & cell2 \\% \\ for next row
+    \hline
+    cell3 & cell4\\% \\ necessary for \hline to work
+    \hline
+\end{tabular}
+\end{center}
+
+\end{document}
